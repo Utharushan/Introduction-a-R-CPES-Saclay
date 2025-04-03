@@ -1,35 +1,33 @@
 rm (list = ls())
 
-#nombre de compartiments = 5
-#nombres d'années = 75
-#effectif initial de chaque = c(50, 0, 0, 0, 0)
-#Taux de fécondité = 3.75
-#Taux de survie de chaque compartiment = c(0.75, 0.6, 0.6, 0.5, 0.4937)
-
-#nombre de compartiments = 5
-#nombres d'années = 30
-#effectif initial de chaque = c(50, 0, 0, 0, 0)
-#Taux de fécondité = 5
-#Taux de survie de chaque compartiment = c(0.75, 0.6, 0.6, 0.5, 0.4937)
-
-#nombre de compartiments = 5
-#nombres d'années = 100
-#effectif initial de chaque = c(50, 10, 10, 10, 10)
-#Taux de fécondité = 3.25
-#Taux de survie de chaque compartiment = c(0.75, 0.6, 0.6, 0.5, 0.4937)
-
-#nombre de compartiments = 6
-#nombres d'années = 200
-#effectif initial de chaque = c(0, 0, 0, 0, 0, 100)
-#Taux de fécondité = 4.65
-#Taux de survie de chaque compartiment = c(0.72, 0.72, 0.72, 0.72, 0.72, 0.1)
-
+# Scénario 1
 nbCompartiments <- 5
 nbAnnees <- 75
-
 effectif_compartiment <- c(50, 0, 0, 0, 0)
 taux_de_fecondite <- 3.75
 taux_de_transition <- c(0.75, 0.6, 0.6, 0.5, 0.4937)
+
+# # Scénario 2
+# nbCompartiments <- 5
+# nbAnnees <- 30
+# effectif_compartiment <- c(50, 0, 0, 0, 0)
+# taux_de_fecondite <- 5
+# taux_de_transition <- c(0.75, 0.6, 0.6, 0.5, 0.4937)
+# 
+# # Scénario 3
+# nbCompartiments <- 5
+# nbAnnees <- 100
+# effectif_compartiment <- c(50, 10, 10, 10, 10)
+# taux_de_fecondite <- 3.25
+# taux_de_transition <- c(0.75, 0.6, 0.6, 0.5, 0.4937)
+# 
+# # Scénario 4
+# nbCompartiments <- 6
+# nbAnnees <- 200
+# effectif_compartiment <- c(0, 0, 0, 0, 0, 100)
+# taux_de_fecondite <- 4.65
+# taux_de_transition <- c(0.72, 0.72, 0.72, 0.72, 0.72, 0.1)
+
 evolution <- c(effectif_compartiment)
 
 for (i in 1:nbAnnees) {

@@ -68,21 +68,17 @@ Modélisation de l’évolution d’une population sur plusieurs années avec pr
 ### 4. 🐇🦊 Modèle proie-prédateur (`proie_predateur/`)
 Ce script simule l’évolution d’un système proie-prédateur selon un modèle mathématique basé sur des interactions biologiques simples.
 
-- **Modèle utilisé** :
-  \[
-  \begin{cases}
-  X_{n+1} = X_n \cdot S_{proie} - p \cdot X_n \cdot Y_n \\
-  Y_{n+1} = Y_n \cdot S_{prédateur} + c \cdot X_n \cdot Y_n
-  \end{cases}
-  \]
+- **Modèle utilisé** :\
+Xₙ₊₁ = Xₙ × S_proie − p × Xₙ × Yₙ  
+Yₙ₊₁ = Yₙ × S_prédateur + c × Xₙ × Yₙ
 
 - **Paramètres** :
-  - Proies initiales : 200
-  - Prédateurs initiaux : 50
-  - Survie proies : 1.05
-  - Survie prédateurs : 0.97
-  - Taux de prédation : 0.001
-  - Croissance prédateurs : 0.0002
+  - Proies initiales (X₀) : 200
+  - Prédateurs initiaux (Y₀) : 50
+  - Survie proies (S_proie) : 1.05
+  - Survie prédateurs (S_prédateur) : 0.97
+  - Taux de prédation (p) : 0.001
+  - Croissance prédateurs (c) : 0.0002
   - Cycles simulés : 6000
 
 - **Sortie** :
